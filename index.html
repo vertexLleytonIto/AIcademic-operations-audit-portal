@@ -3,91 +3,167 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Academic Operations Portal</title>
+  <title>Summit Public Accountability Portal</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <div>
-      <p class="eyebrow">Meridian Learning Consortium</p>
-      <h1>Academic Operations Portal</h1>
-      <p class="lede">Weekly public-facing operations update for campus contacts, assessment readiness, and student support service coordination.</p>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Summit Public Accountability Portal home">
+        <span class="brand-mark">S</span>
+        <span>
+          <strong>Summit Public Accountability Portal</strong>
+          <small>Fictional public report archive</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="campus-directory.html">Campus Directory</a>
+        <a href="methodology.html">Methodology</a>
+      </nav>
     </div>
-    <nav aria-label="Primary navigation">
-      <a href="index.html" aria-current="page">Weekly Update</a>
-      <a href="campus-directory.html">Campus Directory</a>
-      <a href="cedar-vale-learning-center-profile.html">Cedar Vale</a>
-      <a href="eastbank-stem-school-profile.html">Eastbank STEM</a>
-    </nav>
   </header>
 
   <main>
-    <section class="hero-panel">
-      <div>
-        <p class="label">Current week</p>
-        <h2>Week Ending May 15, 2026</h2>
-        <p>The Academic Operations team is monitoring staffing continuity, assessment readiness, family communication response times, and support service access across all active campuses.</p>
+    <section class="home-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">2025-2026 Accountability Release</p>
+        <h1>Campus report cards for Summit Charter Schools</h1>
+        <p class="lede">Review current campus profiles, find accountability report cards, and compare school performance indicators across the Summit network.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="campus-directory.html">Search Campuses</a>
+          <a class="button secondary" href="methodology.html">View Data Notes</a>
+        </div>
       </div>
-      <div class="status-box">
-        <span class="status-dot"></span>
-        <strong>Network status:</strong>
-        <span>Open with targeted follow-up</span>
+
+      <div class="release-visual" aria-label="Arizona campus region overview">
+        <div class="map-card">
+          <div class="map-title">
+            <span>Arizona service area</span>
+            <strong>10 campuses</strong>
+          </div>
+          <div class="az-map" aria-hidden="true">
+            <span class="map-dot phoenix"></span>
+            <span class="map-dot mesa"></span>
+            <span class="map-dot tucson"></span>
+            <span class="map-dot flagstaff"></span>
+            <span class="map-dot yuma"></span>
+            <span class="map-dot chandler"></span>
+            <span class="map-dot glendale"></span>
+            <span class="map-dot tempe"></span>
+            <span class="map-dot maricopa"></span>
+            <span class="map-dot prescott"></span>
+          </div>
+          <dl class="mini-facts">
+            <div><dt>Regions</dt><dd>5</dd></div>
+            <div><dt>A/B campuses</dt><dd>5</dd></div>
+            <div><dt>Attendance watch</dt><dd>5</dd></div>
+          </dl>
+        </div>
       </div>
     </section>
 
-    <section class="content-grid">
-      <article>
-        <h2>Weekly Update Overview</h2>
-        <p>Most campuses are operating within normal spring routines. The current audit window is focused on campuses with active staffing coverage actions, readiness confirmations, or repeated family communication themes.</p>
-        <p>Campus teams should continue using the published contact paths below until the Friday packet is reconciled by Academic Operations.</p>
+    <section class="summary-strip" aria-label="Network summary">
+      <article class="summary-card">
+        <span class="metric-value">4,908</span>
+        <span class="metric-label">Students represented</span>
+      </article>
+      <article class="summary-card">
+        <span class="metric-value">A-F</span>
+        <span class="metric-label">Letter grade range</span>
+      </article>
+      <article class="summary-card">
+        <span class="metric-value">5</span>
+        <span class="metric-label">Campuses over 20% chronic absenteeism</span>
+      </article>
+      <article class="summary-card">
+        <span class="metric-value">2</span>
+        <span class="metric-label">Campuses below 30% in math or ELA</span>
+      </article>
+    </section>
+
+    <section class="portal-grid">
+      <article class="wide-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Current release</p>
+            <h2>Report Card Archive</h2>
+          </div>
+          <a class="text-link" href="campus-directory.html">Open directory</a>
+        </div>
+        <p>The portal is organized around campus profile pages. Each profile includes the current report-card download link, report year, source-page notes, and a short performance context statement aligned to the campus data map.</p>
+        <div class="archive-list">
+          <div>
+            <strong>2025-2026 Current Report Cards</strong>
+            <span>Current release links are posted on each campus profile page.</span>
+          </div>
+          <div>
+            <strong>Prior-Year Archive</strong>
+            <span>Archive rows show the expected structure for prior accountability releases.</span>
+          </div>
+          <div>
+            <strong>Data Notes</strong>
+            <span>Methodology, source-page guidance, and synthetic data disclosures are published separately.</span>
+          </div>
+        </div>
       </article>
 
-      <article>
-        <h2>Academic Operations Priorities</h2>
-        <ul class="check-list">
-          <li>Confirm campus-level readiness before spring assessment windows.</li>
-          <li>Review campuses with open staffing actions or temporary service coverage.</li>
-          <li>Validate family communication routing for health services and support questions.</li>
-          <li>Keep public-facing campus contacts aligned with the current campus master.</li>
-        </ul>
-      </article>
+      <aside class="side-panel">
+        <p class="eyebrow">Synthetic data disclosure</p>
+        <h2>Training Use Only</h2>
+        <p>All campuses, metrics, report links, and records on this site are fictional and synthetic. The portal is built for AI Challenge Week 2 workflow practice.</p>
+        <a class="button secondary full" href="methodology.html#synthetic-data">Read Disclosure</a>
+      </aside>
     </section>
 
     <section>
       <div class="section-heading">
         <div>
-          <p class="label">Monitoring this week</p>
-          <h2>Items For Follow-Up</h2>
+          <p class="eyebrow">Review priorities</p>
+          <h2>Current Watch Areas</h2>
         </div>
-        <a class="text-link" href="campus-directory.html">View all campuses</a>
+        <span class="muted">Based on the 2025-2026 synthetic report map</span>
       </div>
-      <div class="cards">
-        <a class="card" href="cedar-vale-learning-center-profile.html">
-          <span class="tag high">High attention</span>
-          <h3>Cedar Vale Learning Center</h3>
-          <p>Alternative program support coverage, counseling continuity, and Friday provider availability.</p>
+      <div class="campus-cards">
+        <a class="campus-card urgent" href="campuses/summit-glendale-west.html">
+          <span class="badge badge-f">F</span>
+          <h3>Summit Glendale West</h3>
+          <p>Urgent support needed: proficiency below 30%, chronic absenteeism near 30%, and enrollment slipping.</p>
+          <span class="card-meta">Western Arizona | Glendale | K-8</span>
         </a>
-        <a class="card" href="eastbank-stem-school-profile.html">
-          <span class="tag medium">Readiness watch</span>
-          <h3>Eastbank STEM School</h3>
-          <p>Assessment accommodations, support services updates, and readiness confirmation timing.</p>
+        <a class="campus-card watch" href="campuses/summit-tucson-south.html">
+          <span class="badge badge-d">D</span>
+          <h3>Summit Tucson South</h3>
+          <p>Academic recovery campus with math below 30% and absenteeism above the internal watch threshold.</p>
+          <span class="card-meta">Southern Arizona | Tucson | K-8</span>
         </a>
-        <a class="card" href="campus-directory.html">
-          <span class="tag neutral">Directory check</span>
-          <h3>Campus Contact Review</h3>
-          <p>Confirm that public-facing contacts match current operations ownership and preferred follow-up methods.</p>
+        <a class="campus-card watch" href="campuses/summit-tempe-bridge.html">
+          <span class="badge badge-d">D</span>
+          <h3>Summit Tempe Bridge</h3>
+          <p>Combined math and attendance concern, with math recovery and attendance coordination as priorities.</p>
+          <span class="card-meta">Central | Tempe | 6-12</span>
         </a>
       </div>
     </section>
 
-    <section class="notice">
-      <h2>Announcement</h2>
-      <p>The Spring Operations Readiness guide was last refreshed on <strong>April 18, 2026</strong>. Campus teams may continue using the posted guide for family support routing through <strong>May 10, 2026</strong>.</p>
+    <section class="grade-panel" aria-label="Letter grade distribution">
+      <div>
+        <p class="eyebrow">Network snapshot</p>
+        <h2>Letter Grade Distribution</h2>
+        <p class="muted">Distribution reflects the fictional 2025-2026 current release.</p>
+      </div>
+      <div class="grade-bars">
+        <div><span>A</span><meter min="0" max="10" value="3"></meter><strong>3</strong></div>
+        <div><span>B</span><meter min="0" max="10" value="2"></meter><strong>2</strong></div>
+        <div><span>C</span><meter min="0" max="10" value="2"></meter><strong>2</strong></div>
+        <div><span>D</span><meter min="0" max="10" value="2"></meter><strong>2</strong></div>
+        <div><span>F</span><meter min="0" max="10" value="1"></meter><strong>1</strong></div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Fictional training site for AI workflow practice.</p>
+    <p>Summit Charter Schools is fictional. This public accountability portal contains synthetic training data only.</p>
   </footer>
 </body>
 </html>

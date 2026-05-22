@@ -1,24 +1,32 @@
-# Academic Operations Portal
+# Summit Public Accountability Portal
 
-This repository contains a fictional GitHub Pages training site for the AI Challenge Week 2 **Academic Operations Audit Assistant** project.
+This repository contains the fictional public report portal for AI Challenge Week 2.
 
-All data on this site is synthetic. The campuses, staff names, contact details, readiness notes, and operational details are invented for AI workflow practice. The site does not contain real students, real staff, real schools, internal Vertex data, confidential information, or live operational links.
+The portal is a static training website for Summit Charter Schools, a fictional Arizona charter network. It gives participants a realistic place to search campus profiles, navigate to report-card download links, and review methodology notes before extracting data from PDFs.
 
-## Purpose
+All site data is synthetic. The campuses, report values, URLs, and archive records are invented for workflow practice.
 
-The site gives participants a realistic public-facing web source to audit alongside spreadsheets and PDF notes. It is intentionally designed with a few inconsistencies, stale references, contact conflicts, and incomplete support details so participants can practice using Codex to compare web content against source files.
+## Pages
 
-## Files
+- `index.html`: portal home and current release overview
+- `campus-directory.html`: searchable and filterable campus directory
+- `methodology.html`: methodology, source-page notes, and synthetic data disclosure
+- `campuses/*.html`: ten campus profile pages matching `Campus Report Links.csv`
+- `campus-data.js`: shared campus data from `_build_notes/Campus Performance Data Map.csv`
+- `directory.js`: directory search and filters
+- `campus-profile.js`: campus profile rendering
+- `reports/current/`: planned location for current report-card PDFs
+- `reports/archive/`: planned location for archive report PDFs
 
-- `index.html`: weekly academic operations update
-- `campus-directory.html`: public-facing campus directory
-- `cedar-vale-learning-center-profile.html`: high-priority campus profile
-- `eastbank-stem-school-profile.html`: second campus profile with readiness issues
-- `styles.css`: lightweight shared styling
+## Local URL
 
-## View Locally
+The intake CSV points to:
 
-Open `index.html` directly in a browser, or start a simple local static server from the repository root:
+```text
+http://localhost:8000/campuses/<campus-slug>.html
+```
+
+Start a local static server from this folder:
 
 ```powershell
 python -m http.server 8000
@@ -30,17 +38,14 @@ Then visit:
 http://localhost:8000/
 ```
 
-## GitHub Pages
+## Live URL
 
-This site is intended to deploy from the `main` branch and repository root using GitHub Pages.
-
-Expected live URL:
+After GitHub Pages deploys from `main`, the live portal should be available at:
 
 ```text
 https://vertexlleytonito.github.io/AIcademic-operations-audit-portal/
 ```
 
-After pushing changes to `main`, confirm GitHub Pages is configured to serve from:
+## PDF Status
 
-- Branch: `main`
-- Folder: `/ (root)`
+The current campus profile pages link to the 2025-2026 report-card PDFs under `reports/current/`. These PDFs are hosted by the public portal and should not be copied into the participant package.
